@@ -662,7 +662,8 @@ static void run_linker(StringArray *inputs, char *output) {
   strarray_push(&arr, "-L/usr/lib");
   strarray_push(&arr, "-L/usr/llib");
   strarray_push(&arr, "-L/lib");
-
+  strarray_push(&arr, "-z");
+  strarray_push(&arr, "noexecstack");
 
   if (!opt_static) {
     strarray_push(&arr, "-dynamic-linker");
