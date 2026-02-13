@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: install dependencies
+      run: apt-get install -y curl
     - name: make check
       run: make test
