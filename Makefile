@@ -9,6 +9,7 @@ TESTS=$(TEST_SRCS:.ç=.exe)
 # Stage 1
 
 cç: $(OBJS)
+	mkdir -p llib
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS) -lcurl
 	$(CC) $(CFLAGS) -fPIC -c ./est/libest.c -o ./llib/libest.a
 
