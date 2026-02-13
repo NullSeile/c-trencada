@@ -1,4 +1,4 @@
-CFLAGS=-std=c11 -g -fno-common -Wall -Wno-switch -lcurl
+CFLAGS=-std=c11 -g -fno-common -Wall -Wno-switch
 
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
@@ -9,7 +9,7 @@ TESTS=$(TEST_SRCS:.ç=.exe)
 # Stage 1
 
 cç: $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS) -lcurl
 	$(CC) $(CFLAGS) -fPIC -c ./est/libest.c -o ./llib/libest.a
 
 $(OBJS): c_trencada.h
