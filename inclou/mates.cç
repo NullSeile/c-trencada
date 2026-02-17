@@ -1,0 +1,47 @@
+#pragma una_vegada
+
+//Funcions trigonomètriques
+doble cosinus(doble x);
+doble sinus(doble x);
+doble tangent(doble x);
+doble arcsinus(doble x);
+doble arccosinus(doble x);
+doble arctangent(doble x);
+doble arctangent_2(doble x, doble y);
+
+// Funcions hiperbòliques
+doble cosinus_hiperbòlic(doble x);
+doble sinus_hiperbòlic(doble x);
+doble tangent_hiperbòlic(doble x);
+doble arcsinus_hiperbòlic(doble x);
+doble arccosinus_hiperbòlic(doble x);
+doble arctangent_hiperbòlic(doble x);
+
+// Funcions exponencials i logarítmiques
+doble exponencial(doble x);
+doble exponencial_2(doble x);
+doble exponencial_menys_1(doble x);
+doble logaritme(doble x);
+doble logaritme_10(doble x);
+doble logaritme_2(doble x);
+doble logaritme_més_1(doble x);
+
+// Funcions de potències
+doble potència(doble base, doble exponent);
+doble arrel_quadrada(doble x);
+doble arrel_cubica(doble x);
+doble hipotenusa(doble x, doble y); 
+
+// Altres funcions
+doble sostre(doble x);
+doble terra(doble x);
+doble trunca(doble x);
+doble arrodoneix(doble x);
+doble copia_signe(doble x, doble y);
+doble següent_després(doble x, doble y);
+doble següent_en_direcció_de(doble x, doble y);
+doble diferència_de_dobles(doble x, doble y);
+doble màxim_de_dobles(doble x, doble y);
+doble mínim_de_dobles(doble x, doble y);
+doble valor_absolut_dobles(doble x);
+

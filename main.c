@@ -678,6 +678,8 @@ static void run_linker(StringArray *inputs, char *output) {
 
   if (opt_static) {
     strarray_push(&arr, "-lest");
+    strarray_push(&arr, "-lm");
+    strarray_push(&arr, "-lmates");
     strarray_push(&arr, "--start-group");
     strarray_push(&arr, "-lgcc");
     strarray_push(&arr, "-lgcc_eh");
@@ -686,6 +688,8 @@ static void run_linker(StringArray *inputs, char *output) {
   } else {
     strarray_push(&arr, "-lc");
     strarray_push(&arr, "-lest");
+    strarray_push(&arr, "-lm");
+    strarray_push(&arr, "-lmates");
     strarray_push(&arr, "-lgcc");
     strarray_push(&arr, "--as-needed");
     strarray_push(&arr, "-lgcc_s");
